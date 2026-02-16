@@ -1,0 +1,49 @@
+Slowloris
+Low bandwidth HTTP DoS tool
+
+Stress Testing
+Description
+Slowloris is a denial-of-service attack tool that allows a single machine to take down a web server with minimal bandwidth by holding connections open.
+
+Installation / Check
+Check if installed:
+
+which slowloris
+Install command:
+
+pip install slowloris
+Basic Syntax
+slowloris <target>
+Common Commands
+Command	What it does	When to use	Risk
+slowloris target.com
+
+Basic attack	Test web server	
+slowloris target.com -p 8080
+
+Custom port	Non-standard port	
+slowloris target.com -s 500
+
+Set socket count	Adjust intensity	
+Step-by-Step Guide
+1
+Identify target web server
+2
+Run slowloris
+3
+Monitor connections
+4
+Test server availability
+5
+Stop and document
+Understanding the Output
+Shows number of open connections and attack status.
+
+Important Warnings
+•
+DoS attacks are illegal
+•
+Can disrupt services
+•
+Only test with explicit permission
+⚠️ Use Kali Linux tools only on systems you own or have written permission to test. Unauthorized hacking is illegal and can result in criminal charges.
