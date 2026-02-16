@@ -1,0 +1,49 @@
+GoldenEye
+HTTP DoS test tool
+
+Stress Testing
+Description
+GoldenEye is an HTTP DoS test tool that uses KeepAlive and NoCache to stress test web servers.
+
+Installation / Check
+Check if installed:
+
+ls goldeneye.py
+Install command:
+
+git clone https://github.com/jseidl/GoldenEye.git
+Basic Syntax
+python goldeneye.py <url>
+Common Commands
+Command	What it does	When to use	Risk
+python goldeneye.py http://target.com
+
+Basic stress test	Test web server	
+python goldeneye.py http://target.com -w 50
+
+Set workers	Increase intensity	
+python goldeneye.py http://target.com -s 500
+
+Set sockets	More connections	
+Step-by-Step Guide
+1
+Clone repository
+2
+Identify target URL
+3
+Run GoldenEye
+4
+Monitor target response
+5
+Document results
+Understanding the Output
+Shows active connections and response times.
+
+Important Warnings
+•
+Only use on systems you own
+•
+Can crash web servers
+•
+Illegal without permission
+⚠️ Use Kali Linux tools only on systems you own or have written permission to test. Unauthorized hacking is illegal and can result in criminal charges.
