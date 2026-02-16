@@ -1,0 +1,55 @@
+hping3
+TCP/IP packet assembler and analyzer
+
+Stress Testing
+Description
+hping3 is a network tool able to send custom TCP/IP packets and display target replies. Used for firewall testing, port scanning, and network testing.
+
+Installation / Check
+Check if installed:
+
+which hping3
+Install command:
+
+sudo apt install hping3
+Basic Syntax
+hping3 [options] <target>
+Common Commands
+Command	What it does	When to use	Risk
+hping3 -S -p 80 target
+
+SYN packet to port 80	Test port response	
+hping3 --flood -S -p 80 target
+
+SYN flood	Stress testing (authorized)	
+hping3 -1 target
+
+ICMP ping	Basic connectivity	
+hping3 -S --scan 1-1000 target
+
+Port scan	Find open ports	
+hping3 -S -p 80 --spoof 1.2.3.4 target
+
+Spoofed source	Test firewall rules	
+Step-by-Step Guide
+1
+Choose target
+2
+Select packet type (SYN/UDP/ICMP)
+3
+Set port and options
+4
+Run hping3
+5
+Analyze responses
+Understanding the Output
+Shows sent packets and received responses with timing and flags.
+
+Important Warnings
+•
+Flooding is illegal without permission
+•
+Can crash systems
+•
+Use only on authorized targets
+⚠️ Use Kali Linux tools only on systems you own or have written permission to test. Unauthorized hacking is illegal and can result in criminal charges.
